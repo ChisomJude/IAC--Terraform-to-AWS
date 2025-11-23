@@ -1,0 +1,31 @@
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Project Configuration
+project_name = "myblogapp"
+environment  = "dev"
+owner        = "DevOps-Team"
+
+# Network Configuration
+vpc_cidr             = "10.0.0.0/16"
+public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+availability_zones   = ["us-east-1a", "us-east-1b"]
+
+# EC2 Configuration
+instance_type  = "t2.medium" #or use a smaller instance - t2.micro
+instance_count = 1
+key_name     = "yourkey"  # an existing key
+
+# Application Configuration
+app_port       = 5000
+github_repo    = "https://github.com/ChisomJude/myblog.git"  #or use ur git-repo
+github_branch  = "master"
+
+# Security Configuration
+allowed_ssh_cidr = ["0.0.0.0/0"]  # Change to your IP 
+
+# Features
+enable_monitoring = false
+create_alb       = false
+
+
